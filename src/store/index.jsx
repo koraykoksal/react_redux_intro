@@ -9,10 +9,10 @@ import { combineReducers } from 'redux'
 
 
 //! combineReducer iki farklı reducer birleştirmek için kullanılır.
-
+//* key value şeklinde 
 const rootReducer = combineReducers({
-    counterReducer,
-    todoReducer,
+    counter:counterReducer,
+    todo:todoReducer,
 })
 
 export const store = createStore(rootReducer)

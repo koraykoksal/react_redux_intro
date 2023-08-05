@@ -5,8 +5,12 @@ import { CLR, DEC, INC, cikarma, counterReducer, toplama } from "../../store/cou
 const Counter = () => {
 
 
-  const count = useSelector((state)=>state.count)
+  // const count = useSelector((state)=>state.count)
   
+  //* root katmanı ile ikinci bir katman oluşuyor ve x>y>z şeklinde bir erişim oluşuyor.
+  const count = useSelector((state)=>state.counter.count)
+
+
   //! custom redux hook. state değişiklikleri dispatch ile yapılır
   const dispatch=useDispatch()
 
