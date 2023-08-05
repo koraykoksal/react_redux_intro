@@ -11,6 +11,8 @@ export const toplama=()=>{
 
 export const cikarma=()=>({type:DEC})
 
+export const reset=()=>({type:CLR})
+
 //! redux da başlangıç olarak initialState state belirlenmesi gerekir.
 
 const initialState={
