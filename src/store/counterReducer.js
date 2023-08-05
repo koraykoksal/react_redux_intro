@@ -4,6 +4,12 @@ export const DEC = 'değeri azaltma'
 export const CLR = 'değeri sıfırlama'
 
 
+export const toplama=()=>{
+
+    return{type:INC}
+}
+
+export const cikarma=()=>({type:DEC})
 
 //! redux da başlangıç olarak initialState state belirlenmesi gerekir.
 
